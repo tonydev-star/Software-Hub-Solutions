@@ -1,0 +1,364 @@
+/* Responsive Design */
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 1rem 0;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    /* Typography */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-watermark {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* Sections */
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    /* Service Cards */
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-image-placeholder {
+        height: 150px;
+    }
+    
+    /* Project Cards */
+    .project-image-placeholder {
+        height: 200px;
+    }
+    
+    .project-content {
+        padding: 1.5rem;
+    }
+    
+    .project-stats {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Contact */
+    .contact-item {
+        padding: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    /* Typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    /* Navigation */
+    .nav-logo .logo-main {
+        font-size: 1.2rem;
+    }
+    
+    .logo-symbol {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    /* Sections */
+    .section-padding {
+        padding: 40px 0;
+    }
+    
+    /* Service Cards */
+    .service-card {
+        padding: 1rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .service-icon i {
+        font-size: 1.2rem;
+    }
+    
+    /* Project Cards */
+    .project-image-placeholder {
+        height: 180px;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    /* Contact */
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+    }
+    
+    /* Footer */
+    .footer-logo .logo-symbol {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-links a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .service-card,
+    .project-content,
+    .contact-form {
+        padding: 0.8rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-watermark {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%234CAF50" opacity="0.1"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>');
+        background-size: contain;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .hero-scroll,
+    .contact-form,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .section-padding {
+        padding: 1rem 0;
+    }
+    
+    .service-card,
+    .project-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .scroll-indicator {
+        animation: none;
+    }
+}

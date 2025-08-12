@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Custom software solutions and digital tools. We design and build websites, web & mobile apps, and custom systems tailored to your business needs.">
+<meta name="keywords" content="custom software, web development, mobile apps, website design, digital tools, software solutions, web apps, custom systems, pdf guides">
+<meta name="author" content="Software Hub Solutions">
+    <title>Software Hub Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* WhatsApp Floating Button Styles */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+    <div class="loading-logo">
+        <div class="logo-symbol">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="logo-text">
+            <span class="logo-main">Software Hub</span>
+            <span class="logo-sub">Solutions</span>
+        </div>
+    </div>
+    <div class="loading-bar">
+        <div class="loading-progress"></div>
+    </div>
+    <p class="loading-text">Transforming ideas into digital solutions...</p>
+</div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursorFollower"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+    <img src="images/logo.jpg" alt="Pivot Energy Logo" class="logo-img">
+</a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="#contact" class="nav-link" style="background-color: rgb(0, 221, 255);">Contact Us</a>
+                   </li>
+
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-slideshow">
+                <div class="slide active" style="background-image: url('images/bg1.jpg')"></div>
+                <div class="slide" style="background-image: url('images/bg4.jpg')"></div>
+                <div class="slide" style="background-image: url('images/bg2.jpg')"></div>
+                <div class="slide" style="background-image: url('images/mb3.jpg')"></div>
+                <div class="slide" style="background-image: url('images/bg6.jpg')"></div>
+                <div class="slide" style="background-image: url('images/bg7.jpg')"></div>
+                <div class="slide" style="background-image: url('images/bg5.jpg')"></div>
+                <div class="slide" style="background-image: url('images/bg9.jpg')"></div>
+                <div class="slide" style="background-image: url('images/logo.jpg')"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-watermark"></div>
+            <div class="slide-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+                <div class="indicator" data-slide="4"></div>
+                <div class="indicator" data-slide="5"></div>
+                <div class="indicator" data-slide="6"></div>
+                <div class="indicator" data-slide="7"></div>
+                <div class="indicator" data-slide="8"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+    <div class="hero-content">
+    <div class="container">
+        <h1 class="hero-title">Software Hub Solutions</h1>
+        <p class="hero-subtitle">We design and build websites, web & mobile apps, and custom systems tailored to your needs. Unlock your potential with expert digital solutions.</p>
+        <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">Our Services</a>
+            <a href="#contact" class="btn btn-secondary">Get Started</a>
+        </div>
+    </div>
+</div>
+</div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">About Software Hub Solutions</h2>
+            <p class="section-subtitle">Transforming ideas into powerful digital solutions that drive business growth</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p>At Software Hub Solutions, we are dedicated to delivering custom software solutions and digital tools that empower businesses to thrive. Our comprehensive approach encompasses web development, mobile applications, and custom systems designed to meet your unique requirements and drive success.</p>
+                                     
+                <h3>Why Choose Us</h3>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-code"></i>
+                        <h4>Custom Solutions</h4>
+                        <p>Tailored software built specifically for your needs</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Proven Results</h4>
+                        <p>Track record of successful project implementations</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h4>Expert Team</h4>
+                        <p>Experienced developers and digital specialists</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Modern Technology</h4>
+                        <p>Cutting-edge tools and latest development practices</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/logo2.jpg" alt="About Us" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item" data-target="150">
+                <div class="stat-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="stat-number" data-count="0">0</div>
+                <div class="stat-suffix">+</div>
+                <h3>Projects Completed</h3>
+                <p>Successful deliveries</p>
+            </div>
+            <div class="stat-item" data-target="50">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number" data-count="0">0</div>
+                <div class="stat-suffix">+</div>
+                <h3>Happy Clients</h3>
+                <p>Satisfied customers</p>
+            </div>
+            <div class="stat-item" data-target="5">
+                <div class="stat-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-number" data-count="0">0</div>
+                <div class="stat-suffix">+</div>
+                <h3>Years Experience</h3>
+                <p>Industry expertise</p>
+            </div>
+            <div class="stat-item" data-target="24">
+                <div class="stat-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="stat-number" data-count="0">0</div>
+                <div class="stat-suffix">/7</div>
+                <h3>Support Available</h3>
+                <p>Always here to help</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive digital solutions tailored to transform your business</p>
+        </div>
+        <div class="services-grid">
+
+            <!-- Web Development -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Creating modern, responsive websites and web applications that engage users and drive business growth with cutting-edge technologies.</p>
+                <ul class="service-features">
+                    <li>Custom website design and development</li>
+                    <li>E-commerce platforms</li>
+                    <li>Content management systems</li>
+                    <li>Web application development</li>
+                </ul>
+                <div class="service-image">
+                    <div class="slides">
+                        <img src="images/web1.png" alt="Web Development" class="service-img">
+                        <img src="images/web2.jpg" alt="Web Development" class="service-img">
+                        <img src="images/web-development3.jpg" alt="Web Development" class="service-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile App Development</h3>
+                <p>Building native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences.</p>
+                <ul class="service-features">
+                    <li>iOS app development</li>
+                    <li>Android app development</li>
+                    <li>Cross-platform solutions</li>
+                    <li>App maintenance and updates</li>
+                </ul>
+                <div class="service-image">
+                    <div class="slides">
+                        <img src="images/mb1.jpg" alt="Mobile App Development" class="service-img">
+                        <img src="images/mb2.jpg" alt="Mobile App Development" class="service-img">
+                        <img src="images/mobile app.jpg" alt="Mobile App Development" class="service-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Software -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Custom Software Solutions</h3>
+                <p>Developing tailored software systems and applications designed specifically for your business processes and requirements.</p>
+                <ul class="service-features">
+                    <li>Enterprise software development</li>
+                    <li>Database management systems</li>
+                    <li>API development and integration</li>
+                    <li>Legacy system modernization</li>
+                </ul>
+                <div class="service-image">
+                    <div class="slides">
+                        <img src="images/custom1.jpg" alt="Custom Software" class="service-img">
+                        <img src="images/custom 2.jpg" alt="Custom Software" class="service-img">
+                         <img src="images/custom 4.jpg" alt="Custom Software" class="service-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Tools & Resources -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Digital Tools & Resources</h3>
+                <p>Providing powerful digital tools, templates, and expert eBooks to help businesses streamline operations and accelerate growth.</p>
+                <ul class="service-features">
+                    <li>Business automation tools</li>
+                    <li>Professional templates</li>
+                    <li>Expert eBooks and guides</li>
+                    <li>Digital asset libraries</li>
+                </ul>
+                <div class="service-image">
+                    <div class="slides">
+                        <img src="images/custom 4.jpg" alt="Digital Tools" class="service-img">
+                        <img src="images/digital-tools2.jpg" alt="Digital Tools" class="service-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- IT Consulting -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>IT Consulting & Support</h3>
+                <p>Expert guidance and ongoing support to help you make informed technology decisions and optimize your digital infrastructure.</p>
+                <ul class="service-features">
+                    <li>Technology strategy consulting</li>
+                    <li>System architecture planning</li>
+                    <li>Technical support and maintenance</li>
+                    <li>Digital transformation guidance</li>
+                </ul>
+                <div class="service-image">
+                    <div class="slides">
+                        <img src="images/it-consulting1.jpg" alt="IT Consulting" class="service-img">
+                        <img src="images/it-consulting2.jpg" alt="IT Consulting" class="service-img">
+                        <img src="images/it-consulting3.jpg" alt="IT Consulting" class="service-img">
+                        <img src="images/it consultant4.png" alt="IT Consulting" class="service-img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+   <section id="portfolio" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Portfolio</h2>
+            <p class="section-subtitle">Showcasing our successful software development projects and digital solutions</p>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Project 1: Pivot Energy Ltd Website -->
+            <div class="project-card">
+                <div class="project-horizontal">
+                    <div class="project-content">
+                       <h3>Pivot Energy Ltd Website – Renewable Energy Company</h3>
+<p>
+A comprehensive corporate website developed for Pivot Energy Ltd, a leading renewable energy company focused on transforming Africa's energy landscape. The website showcases their expertise in wind, solar, waste-to-energy, and hydro solutions with an engaging, professional design that reflects their commitment to sustainability.
+</p>
+<p>
+Built with modern web technologies, the site features responsive design, interactive project galleries, detailed service information, and optimized performance. The platform effectively communicates complex renewable energy concepts through clear navigation, compelling visuals, and comprehensive project showcases that demonstrate their impact across African markets.
+</p>
+
+                        <div class="project-stats">
+                            <span><i class="fas fa-leaf"></i> Green Energy</span>
+                            <span><i class="fas fa-globe-africa"></i> Africa Focus</span>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://pivot-energy-ltd.web.app" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                background-color: #27ae60;
+                                color: white;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 14px;
+                                transition: background-color 0.3s ease;
+                            " onmouseover="this.style.backgroundColor='#219150'" onmouseout="this.style.backgroundColor='#27ae60'">
+                                <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>Visit Live Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image-placeholder">
+                        <img src="images/pivot project.png" alt="Pivot Energy Website" class="project-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: E-commerce Platform -->
+            <div class="project-card">
+                <div class="project-horizontal">
+                    <div class="project-content">
+                       <h3>E-commerce Platform – Retail Business</h3>
+<p>
+A comprehensive e-commerce solution developed for a leading retail company, featuring modern design, secure payment integration, and advanced inventory management. The platform supports over 10,000 products with real-time stock tracking, automated order processing, and multi-vendor capabilities.
+</p>
+<p>
+Built with responsive design principles, the platform delivers seamless shopping experiences across all devices. Key features include customer account management, wishlist functionality, advanced search filters, and integrated analytics dashboard. The solution increased online sales by 300% and improved customer satisfaction scores significantly.
+</p>
+
+                        <div class="project-stats">
+                            <span><i class="fas fa-shopping-cart"></i> 10K Products</span>
+                            <span><i class="fas fa-chart-line"></i> 300% Growth</span>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://ecommerce-demo.yourcompany.com" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                background-color: #e74c3c;
+                                color: white;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 14px;
+                                transition: background-color 0.3s ease;
+                            " onmouseover="this.style.backgroundColor='#c0392b'" onmouseout="this.style.backgroundColor='#e74c3c'">
+                                <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>Visit Live Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image-placeholder">
+                        <img src="images/ecommerce-project.jpg" alt="E-commerce Platform" class="project-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Mobile Banking App -->
+            <div class="project-card">
+                <div class="project-horizontal">
+                    <div class="project-image-placeholder">
+                        <img src="images/mobile-banking-app.jpg" alt="Mobile Banking App" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Banking App – Financial Services</h3>
+                        <p>
+                            A secure and user-friendly mobile banking application developed for a major financial institution. The app features biometric authentication, real-time transaction monitoring, and comprehensive account management tools. Built with advanced security protocols and intuitive UI/UX design, it serves over 50,000 active users with 99.9% uptime reliability.
+                        </p>
+                        <p>
+                            Key features include instant money transfers, bill payments, loan applications, and financial analytics. The app has significantly reduced branch visits and improved customer engagement through personalized financial insights and notifications.
+                        </p>
+
+                        <div class="project-stats">
+                            <span><i class="fas fa-mobile-alt"></i> 50K Users</span>
+                            <span><i class="fas fa-shield-alt"></i> Bank Security</span>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://banking-app-demo.yourcompany.com" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                background-color: #3498db;
+                                color: white;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 14px;
+                                transition: background-color 0.3s ease;
+                            " onmouseover="this.style.backgroundColor='#2980b9'" onmouseout="this.style.backgroundColor='#3498db'">
+                                <i class="fas fa-mobile-alt" style="margin-right: 8px;"></i>View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Healthcare Management System -->
+            <div class="project-card">
+                <div class="project-horizontal">
+                    <div class="project-image-placeholder">
+                        <img src="images/healthcare-system.jpg" alt="Healthcare Management System" class="project-img">
+                    </div>
+                    <div class="project-content">
+                       <h3>Healthcare Management System – Medical Center</h3>
+<p>
+A comprehensive healthcare management solution designed for a multi-branch medical center network. The system streamlines patient registration, appointment scheduling, electronic health records, and billing processes. It integrates seamlessly with medical equipment and supports telemedicine capabilities for remote consultations.
+</p>
+<p>
+The platform includes advanced features like automated appointment reminders, prescription management, laboratory integration, and detailed reporting analytics. It has improved operational efficiency by 60% and enhanced patient satisfaction through reduced waiting times and better service coordination.
+</p>
+
+                        <div class="project-stats">
+                            <span><i class="fas fa-hospital"></i> Multi-Branch</span>
+                            <span><i class="fas fa-users-cog"></i> 60% Efficiency</span>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://healthcare-demo.yourcompany.com" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                background-color: #2ecc71;
+                                color: white;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 14px;
+                                transition: background-color 0.3s ease;
+                            " onmouseover="this.style.backgroundColor='#27ae60'" onmouseout="this.style.backgroundColor='#2ecc71'">
+                                <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>Visit Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Educational Learning Platform -->
+           <div class="project-card">
+    <div class="project-horizontal">
+        <div class="project-content">
+           <h3>Educational Learning Platform – Online Academy</h3>
+<p>
+An innovative e-learning platform developed for an educational institution, supporting over 5,000 students with interactive courses, live streaming capabilities, and comprehensive assessment tools. The platform features gamification elements, progress tracking, and collaborative learning spaces.
+</p>
+<p>
+Built with modern technologies, the system includes video conferencing integration, automated grading, certificate generation, and parent-student communication portals. The platform increased student engagement by 250% and enabled seamless transition to digital learning during challenging times.
+</p>
+<p>
+Key features include multi-language support, offline content access, mobile applications for iOS and Android, and advanced analytics for educators. The solution has become a model for digital transformation in education across the region.
+</p>
+
+            <div class="project-stats">
+                <span><i class="fas fa-graduation-cap"></i> 5K Students</span>
+                <span><i class="fas fa-chart-line"></i> 250% Engagement</span>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <a href="https://learning-platform-demo.yourcompany.com" target="_blank" style="
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #9b59b6;
+                    color: white;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                    transition: background-color 0.3s ease;
+                    margin-right: 10px;
+                " onmouseover="this.style.backgroundColor='#8e44ad'" onmouseout="this.style.backgroundColor='#9b59b6'">
+                    <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>Visit Live Site
+                </a>
+            </div>
+
+            <!-- See more section -->
+            <div style="margin-top: 2rem;">
+                <a href="portfolio.html" style="
+                    display: inline-block;
+                    padding: 12px 24px;
+                    background-color: #3498db;
+                    color: white;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease;
+                " onmouseover="this.style.backgroundColor='#2980b9'" onmouseout="this.style.backgroundColor='#3498db'">
+                    View Complete Portfolio →
+                </a>
+            </div>
+        </div>
+        <div class="project-image-placeholder">
+            <img src="images/educational-platform.jpg" alt="Educational Learning Platform" class="project-img">
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+   <section id="testimonials"  class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by businesses across various industries</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Software Hub Solutions delivered an exceptional e-commerce platform that transformed our online business. Their attention to detail and technical expertise resulted in a 300% increase in our online sales."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jennifer Williams</h4>
+                            <span>CEO, Fashion Forward Ltd</span>
+                        </div>
+                        <div class="author-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The mobile banking app developed by Software Hub Solutions exceeded our expectations. Their team understood our complex requirements and delivered a secure, user-friendly solution that our customers love."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>David Ochieng</h4>
+                            <span>CTO, SecureBank Kenya</span>
+                        </div>
+                        <div class="author-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Outstanding healthcare management system implementation. Software Hub Solutions' innovative approach streamlined our operations and improved patient satisfaction by 60%. Their ongoing support is exceptional."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Grace Mwangi</h4>
+                            <span>Medical Director, HealthCare Plus</span>
+                        </div>
+                        <div class="author-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-nav">
+            <button class="nav-btn prev" id="prevTestimonial">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="nav-btn next" id="nextTestimonial">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to transform your business with custom software solutions? Contact us today.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>tonylvan77@gmail.com</p>
+                        <p>tonylvan77@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+254758002042</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" >
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" >
+                </div>
+                <div id="custom-alert" class="alert"></div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" >
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-symbol">
+                </div>
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo.jpg" alt="Software Hub Solutions Logo" class="logo-img">
+                </a>
+                <p class="footer-tagline">Transforming ideas into powerful digital solutions</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Custom Software</a></li>
+                        <li><a href="#services">Digital Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Software Hub Solutions. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+<script>
+// Automatically update the year in the footer
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254758002042" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    
+</body>
+</html> 
